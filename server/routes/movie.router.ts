@@ -5,7 +5,7 @@ import {
     createMovie,
     updateMovie,
     deleteMovie,
-} from '../controllers/movieController'
+} from '../sequelize-db/controllers/movie.controller'
 
 const moviesRouter = express.Router()
 

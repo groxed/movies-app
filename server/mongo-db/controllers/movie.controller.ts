@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { ObjectId } from 'mongodb'
-import { collections } from '../services/database.service'
-import Movie from '../models/movieModel'
+import Movie from '../models/movie.model'
+import { collections } from '../services/mongodb.database.service'
 
 export const getMovieById = async (
     req: Request,

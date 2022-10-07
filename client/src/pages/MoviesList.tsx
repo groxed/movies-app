@@ -52,7 +52,7 @@ const MoviesList = () => {
     const columns = [
         {
             Header: 'ID',
-            accessor: '_id',
+            accessor: 'id',
             filterable: true,
         },
         {
@@ -76,7 +76,7 @@ const MoviesList = () => {
             Cell: function (props: any) {
                 return (
                     <span>
-                        <DeleteMovie id={props.original._id} />
+                        <DeleteMovie id={props.original.id} />
                     </span>
                 )
             },
@@ -87,7 +87,7 @@ const MoviesList = () => {
             Cell: function (props: any) {
                 return (
                     <span>
-                        <UpdateMovie id={props.original._id} />
+                        <UpdateMovie id={props.original.id} />
                     </span>
                 )
             },
